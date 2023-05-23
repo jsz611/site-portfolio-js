@@ -87,7 +87,7 @@ const AboutMe = () => {
           <img
             alt="Josiel souza"
             title="Josiel Souza"
-            src="../../assets/images/perfil.jpg"
+            src="../../assets/images/perfil2.jpg"
           />
         </S.Avatar>
         <S.AboutMe>
