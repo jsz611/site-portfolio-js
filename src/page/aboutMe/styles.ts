@@ -267,6 +267,11 @@ export const Avatar = styled.div`
     height: 100%;
     object-fit: cover;
   }
+  @media (min-width: 1024px) {
+    width: 210px;
+    height: 210px;
+  }
+  
 `;
 export const AboutMe = styled.div`
   display: flex;

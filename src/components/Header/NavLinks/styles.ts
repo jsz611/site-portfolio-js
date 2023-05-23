@@ -50,6 +50,7 @@ export const ContainerLinks = styled.ul`
       color: ${(props) => props.theme["gray-100"]};
     }
     a:hover {
+        // background: linear-gradient(27.25deg, #29292E 0.34%, #00B37E 50.42%);
       background: linear-gradient(87.25deg, #ffff 0.34%, #c4c4cc 109.42%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
