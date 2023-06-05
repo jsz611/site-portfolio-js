@@ -15,15 +15,15 @@ const path = " /assets/images";
 export const ContentCard: Array<Icard> = [
   {
     id: "1",
-    name: "Anúncios de Carros",
-    img1: `${path}/imgLoja/home.png`,
-    img2: `${path}/imgLoja/cadastro.png`,
-    img3: `${path}/imgLoja/card.png`,
-    img4: `${path}/imgLoja/cripto.png`,
+    name: "Consumo de API",
+    img1: `${path}/imgTours/card.png`,
+    img2: `${path}/imgTours/home.png`,
+    img3: `${path}/imgTours/loading.png`,
+    img4: `${path}/imgTours/refresh.png`,
     description:
-      "Esse projeto foi feito com react vite com typescript, styled-component, react-router-dom, lib Ether para manipulação de dados na blockchain na rede da BINANCE, usando a metamask como conexão. Tendo como objetivo um crud e transferência de token para outra carteira. E foi feito deploy na netlify. Também fiz uma API para este projeto, para fins de teste você pode abrir o proxímo link ver site do API Anúncio de Carro, para cada alteração é preciso atualizar a página da api, assim você pode criar outros anúncios, editar ou deletar. Para usar a carteira metamask é preciso tê-la instalada no seu navegador.",
-    site: "https://josiel-auto-car.netlify.app/",
-    codigo: "https://github.com/josielsouza/Anuncios-de-Carros",
+      "Consumo de API da course.  Utilizei o react vite, fetch para fazer requisições HTTP na API https://course-api.com/, deixando o site responsível para móbile, tablet e desktop e o deploy foi feito na vercel",
+    site: "https://couser-api-consumption.vercel.app/",
+    codigo: "https://github.com/josielsouza/couser-api-consumption",
   },
   {
     id: "2",
@@ -38,17 +38,16 @@ export const ContentCard: Array<Icard> = [
   },
   {
     id: "3",
-    name: "Consumo de API",
-    img1: `${path}/imgTours/card.png`,
-    img2: `${path}/imgTours/home.png`,
-    img3: `${path}/imgTours/loading.png`,
-    img4: `${path}/imgTours/refresh.png`,
+    name: "Anúncios de Carros",
+    img1: `${path}/imgLoja/home.png`,
+    img2: `${path}/imgLoja/cadastro.png`,
+    img3: `${path}/imgLoja/card.png`,
+    img4: `${path}/imgLoja/cripto.png`,
     description:
-      "Consumo de API da course.  Utilizei o react vite, fetch para fazer requisições HTTP na API https://course-api.com/, deixando o site responsível para móbile, tablet e desktop e o deploy foi feito na vercel",
-    site: "https://couser-api-consumption.vercel.app/",
-    codigo: "https://github.com/josielsouza/couser-api-consumption",
+      "Esse projeto foi feito com react vite com typescript, styled-component, react-router-dom, lib Ether para manipulação de dados na blockchain na rede da BINANCE, usando a metamask como conexão. Tendo como objetivo um crud e transferência de token para outra carteira. E foi feito deploy na netlify. Também fiz uma API para este projeto, para fins de teste você pode abrir o proxímo link ver site do API Anúncio de Carro, para cada alteração é preciso atualizar a página da api, assim você pode criar outros anúncios, editar ou deletar. Para usar a carteira metamask é preciso tê-la instalada no seu navegador.",
+    site: "https://josiel-auto-car.netlify.app/",
+    codigo: "https://github.com/josielsouza/Anuncios-de-Carros",
   },
-
   {
     id: "4",
     name: "API de Produto",
@@ -60,7 +59,6 @@ export const ContentCard: Array<Icard> = [
     site: "https://api-estoque-produto.vercel.app/",
     codigo: "https://github.com/josielsouza/api-estoque-produto",
   },
-
   {
     id: "5",
     name: "Meu Portfólio",
@@ -69,7 +67,7 @@ export const ContentCard: Array<Icard> = [
     img3: `${path}/imgPortfolio/footer.png`,
     img4: `${path}/imgPortfolio/sobre.png`,
     description: `Este site visa unir todos os projetos que eu fizer. Para construção desse site, foi utilizado o vite, typescript, axios para fazer enviar os dados do formulário para uma planilha no Google drive usando um serviço chamado SHEET.BEST, material.ui. E foi feito deploy na netlify`,
-    site: "https://josiel-souza-portfolio.netlify.app/",
+    site: "https://site-portfolio-js.netlify.app/",
     codigo: "https://github.com/jsz611/site-portfolio-js",
   },
   {
@@ -82,5 +80,5 @@ export const ContentCard: Array<Icard> = [
     description: `Esta API foi criada para o agendamento de aulas com professores previamente cadastrado, tecnologias usadas: python3, django, rest_framework, corsheaders e postaman para os testes`,
     site: "https://documenter.getpostman.com/view/27477808/2s93sWAGAM",
     codigo: "https://github.com/jsz611/API-python",
-  }
+  },
 ];
