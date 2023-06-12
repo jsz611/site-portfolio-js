@@ -37,7 +37,7 @@ const AboutMe = () => {
           </S.BoxIcon>
           <S.BoxIcon>
             <a
-              href="https://github.com/josiel5423926"
+              href="https://github.com/jsz611"
               target="_blank"
               rel="noreferrer"
               title="GitHub"

@@ -72,7 +72,7 @@ export const ContentCard: Array<Icard> = [
   },
   {
     id: "6",
-    name: "API de Produto",
+    name: "API de Produto em Node",
     img1: `${path}/imgApiProduto/codigo.png`,
     img2: `${path}/imgApiProduto/navegadorUrl.png`,
     img3: `${path}/imgApiProduto/terminal.png`,
