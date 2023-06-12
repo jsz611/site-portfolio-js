@@ -77,7 +77,7 @@ export const ContentCard: Array<Icard> = [
     img2: `${path}/imgApiProduto/navegadorUrl.png`,
     img3: `${path}/imgApiProduto/terminal.png`,
     img4: `${path}/imgApiProduto/Unico-produto.png`,
-    description: `Uma API simples, apenas para consumo de produto, aceita requisição http GET. Construída apenas com node, nodemon para  monitorar arquivos do projeto em busca de mudanças e reinicia automaticamente o servidor toda vez que algum arquivo é modificado, e foi deployada na vercel.`,
+    description: `Uma API simples, apenas para consumo de produto, aceita requisição http GET. Construída apenas com node, nodemon para  monitorar arquivos do projeto em busca de mudanças e reiniciar automaticamente o servidor toda vez que algum arquivo é modificado, e foi deployada na vercel.`,
     site: "https://api-estoque-produto.vercel.app/",
     codigo: "https://github.com/josielsouza/api-estoque-produto",
   },
