@@ -66,7 +66,7 @@ export const ContentCard: Array<Icard> = [
     img2: `${path}/imgApiPython/home.png`,
     img3: `${path}/imgApiPython/prof.png`,
     img4: `${path}/imgApiPython/professores.png`,
-    description: `Esta API foi criada para o agendamento de aulas com professores previamente cadastrado, tecnologias usadas: python3, django, rest_framework, corsheaders e postaman para os testes`,
+    description: `Esta API foi criada para o agendamento de aulas com professores previamente cadastrado, tecnologias usadas: python3, django, rest_framework, corsheaders e postman para os testes`,
     site: "https://documenter.getpostman.com/view/27477808/2s93sWAGAM",
     codigo: "https://github.com/jsz611/API-python",
   },
