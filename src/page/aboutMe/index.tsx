@@ -101,7 +101,11 @@ const AboutMe = () => {
             <a href="https://faex.edu.br/" target="_blank" title="Faex">
               FAEX
             </a>
-            , concluído em junho de 2020.
+            , concluído em junho de 2020. Hoje estou cursando Gestão da
+            Tecnologia da Informação pela
+            <a href="https://www.uninter.com/" target="_blank" title="Uninter">
+              Uninter
+            </a>
           </S.BoxText>
           <S.BoxText>
             Trabalhei como instalador de internet na
