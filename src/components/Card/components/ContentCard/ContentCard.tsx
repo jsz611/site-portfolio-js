@@ -23,7 +23,7 @@ export const ContentCard: Array<Icard> = [
     description:
       "Consumo de API da course.  Utilizei o react vite, fetch para fazer requisições HTTP na API https://course-api.com/, deixando o site responsível para móbile, tablet e desktop e o deploy foi feito na vercel",
     site: "https://couser-api-consumption.vercel.app/",
-    codigo: "https://github.com/josielsouza/couser-api-consumption",
+    codigo: "https://github.com/jsz611/couser-api-consumption",
   },
   {
     id: "2",
