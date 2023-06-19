@@ -97,7 +97,7 @@ export const ContainerBox = styled.div`
 `;
 export const Title = styled.h3`
   display: flex;
-
+  text-align: center;
   align-items: center;
   justify-content: left;
   font-size: 28px;
