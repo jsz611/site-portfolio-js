@@ -33,7 +33,7 @@ export const ContentCard: Array<Icard> = [
     img3: `${path}/imgSiteVagas/vagas.png`,
     img4: `${path}/imgSiteVagas/vagas2.png`,
     description:
-      "Por ser uma hospedagem gratis é preciso utilizar senhas para acessar este site, usuário: umbler e senha: testehospedagem. Site feito com php e mysql para que pessoas possam conseguir seu emprego",
+      "Por ser uma hospedagem grátis é preciso utilizar senhas para acessar este site, usuário: umbler e senha: testehospedagem. Site feito com php e mysql para que pessoas possam conseguir seu emprego",
     site: "http://site-de-vagas-com-br.umbler.net/",
     codigo: "https://github.com/jsz611/projeto-squad-3",
   },
