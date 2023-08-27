@@ -27,6 +27,18 @@ export const ContentCard: Array<Icard> = [
   },
   {
     id: "2",
+    name: "Site de Vagas de Emprego",
+    img1: `${path}/imgSiteVagas/home.png`,
+    img2: `${path}/imgSiteVagas/login.png`,
+    img3: `${path}/imgSiteVagas/vagas.png`,
+    img4: `${path}/imgSiteVagas/vagas2.png`,
+    description:
+      "Para acessar este site é preciso usar as senhas, usuário = umbler e senha = testehospedagem. Site feito com php e mysql para que pessoas possam conseguir seu emprego",
+    site: "http://site-de-vagas-com-br.umbler.net/",
+    codigo: "https://github.com/jsz611/projeto-squad-3",
+  },
+  {
+    id: "3",
     name: "API Anúncio de Carro",
     img1: `${path}/imgApiLojaDeAnuncios/api.png`,
     img2: `${path}/imgApiLojaDeAnuncios/obj.png`,
@@ -37,7 +49,7 @@ export const ContentCard: Array<Icard> = [
     codigo: "https://github.com/jsz611/car-shop-api",
   },
   {
-    id: "3",
+    id: "4",
     name: "Site de Anúncios de Carros",
     img1: `${path}/imgLoja/home.png`,
     img2: `${path}/imgLoja/cadastro.png`,
@@ -49,7 +61,7 @@ export const ContentCard: Array<Icard> = [
     codigo: "https://github.com/jsz611/car-ad-website",
   },
   {
-    id: "4",
+    id: "5",
     name: "Meu Portfólio",
     img1: `${path}/imgPortfolio/home.png`,
     img2: `${path}/imgPortfolio/card.png`,
@@ -60,7 +72,7 @@ export const ContentCard: Array<Icard> = [
     codigo: "https://github.com/jsz611/site-portfolio-js",
   },
   {
-    id: "5",
+    id: "6",
     name: "API em python",
     img1: `${path}/imgApiPython/agendamento.png`,
     img2: `${path}/imgApiPython/home.png`,
@@ -71,7 +83,7 @@ export const ContentCard: Array<Icard> = [
     codigo: "https://github.com/jsz611/API-python",
   },
   {
-    id: "6",
+    id: "7",
     name: "API de Produto em Node",
     img1: `${path}/imgApiProduto/codigo.png`,
     img2: `${path}/imgApiProduto/navegadorUrl.png`,
