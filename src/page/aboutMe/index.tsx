@@ -68,7 +68,7 @@ const AboutMe = () => {
           )}
           <S.BoxIcon>
             <a
-              href="https://wa.me/5535999288389"
+              href="https://wa.me/5511950886634"
               title="Vamos conversar?"
               target="_blank"
             >
