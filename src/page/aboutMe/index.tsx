@@ -22,7 +22,7 @@ const AboutMe = () => {
     const phoneNumber = "5511950886634";
     const textMessage = "Olá, tudo bem?";
     const whatsappAppUrl = `whatsapp://send?phone=${phoneNumber}&text=${textMessage}`;
-    const whatsappWebUrl = `https://wa.me/${phoneNumber}?text=${textMessage}`;
+    const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${textMessage}`;
   
     if (isBrowser) {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -35,12 +35,23 @@ const AboutMe = () => {
         window.open(whatsappWebUrl, "_blank", "noopener");
       };
   
-      openInApp();
-      setTimeout(() => {
-        openInWeb();
-      }, 1000); 
+      if (isMobile) {
+        if (/WhatsApp/.test(navigator.userAgent)) {
+          openInApp();        
+        } else {
+          openInWeb();
+        }
+      } else {
+        const userChoice = window.confirm("Deseja abrir o WhatsApp para desktop? Clique em OK. WhatsApp Web? Cancelar.");
+        if (userChoice) {
+          openInApp();
+        } else {
+          openInWeb();
+        }
+      }
     }
   };
+  
   
   return (
     <S.Container id="about">
