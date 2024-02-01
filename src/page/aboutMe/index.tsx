@@ -17,39 +17,31 @@ const AboutMe = () => {
   const handleOpenGmail = () => {
     window.location.href = "mailto:souzajosiel611@gmail.com";
   };
+
   const handleOpenWhatsApp = () => {
     const phoneNumber = "5511950886634";
     const textMessage = "Olá, tudo bem?";
     const whatsappAppUrl = `whatsapp://send?phone=${phoneNumber}&text=${textMessage}`;
-    const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${textMessage}`;
-
+    const whatsappWebUrl = `https://wa.me/${phoneNumber}?text=${textMessage}`;
+  
     if (isBrowser) {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
+  
       const openInApp = () => {
         window.location.href = whatsappAppUrl;
       };
-
+  
       const openInWeb = () => {
         window.open(whatsappWebUrl, "_blank", "noopener");
       };
-
-      if (isMobile) {
-        if (/WhatsApp/.test(navigator.userAgent)) {
-          if (window.confirm("Você deseja abrir no aplicativo do WhatsApp?")) {
-            openInApp();
-          } else {
-            openInWeb();
-          }
-        } else {
-          openInWeb();
-        }
-      } else {
+  
+      openInApp();
+      setTimeout(() => {
         openInWeb();
-      }
+      }, 1000); 
     }
   };
-
+  
   return (
     <S.Container id="about">
       <S.Description>
