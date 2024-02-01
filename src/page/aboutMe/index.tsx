@@ -17,6 +17,21 @@ const AboutMe = () => {
   const handleOpenGmail = () => {
     window.location.href = "mailto:souzajosiel611@gmail.com";
   };
+  const handleOpenWhatsApp = () => {
+    const phoneNumber = "5511950886634";
+    const textMessage = "Olá, tudo bem?";
+    const whatsappAppUrl = `whatsapp://send?phone=${phoneNumber}&text=${textMessage}`;
+    const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${textMessage}`;
+
+    if (isBrowser) {
+      const isWhatsAppInstalled = /WhatsApp/.test(navigator.userAgent);
+
+      const urlToOpen = isWhatsAppInstalled ? whatsappAppUrl : whatsappWebUrl;
+
+      window.open(urlToOpen, "_blank");
+    }
+  };
+
   return (
     <S.Container id="about">
       <S.Description>
@@ -67,15 +82,12 @@ const AboutMe = () => {
             </S.BoxIcon>
           )}
           <S.BoxIcon>
-            <a
-              href="https://wa.me/5511950886634"
-              title="Vamos conversar?"
-              target="_blank"
-            >
+            <a onClick={handleOpenWhatsApp} title="Vamos conversar?">
               <WhatsAppIcon />
             </a>
             <span>Fale Comigo</span>
           </S.BoxIcon>
+
           <S.Cv>
             <a href={curriculoPath} download title="Baixar Currículo">
               <img src={curriculoImgPath} alt="Currículo" />
