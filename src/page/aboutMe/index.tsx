@@ -24,11 +24,29 @@ const AboutMe = () => {
     const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${textMessage}`;
 
     if (isBrowser) {
-      const isWhatsAppInstalled = /WhatsApp/.test(navigator.userAgent);
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-      const urlToOpen = isWhatsAppInstalled ? whatsappAppUrl : whatsappWebUrl;
+      const openInApp = () => {
+        window.location.href = whatsappAppUrl;
+      };
 
-      window.open(urlToOpen, "_blank");
+      const openInWeb = () => {
+        window.open(whatsappWebUrl, "_blank", "noopener");
+      };
+
+      if (isMobile) {
+        if (/WhatsApp/.test(navigator.userAgent)) {
+          if (window.confirm("Você deseja abrir no aplicativo do WhatsApp?")) {
+            openInApp();
+          } else {
+            openInWeb();
+          }
+        } else {
+          openInWeb();
+        }
+      } else {
+        openInWeb();
+      }
     }
   };
 
