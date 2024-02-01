@@ -18,40 +18,7 @@ const AboutMe = () => {
     window.location.href = "mailto:souzajosiel611@gmail.com";
   };
 
-  const handleOpenWhatsApp = () => {
-    const phoneNumber = "5511950886634";
-    const textMessage = "Olá, tudo bem?";
-    const whatsappAppUrl = `whatsapp://send?phone=${phoneNumber}&text=${textMessage}`;
-    const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${textMessage}`;
-  
-    if (isBrowser) {
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  
-      const openInApp = () => {
-        window.location.href = whatsappAppUrl;
-      };
-  
-      const openInWeb = () => {
-        window.open(whatsappWebUrl, "_blank", "noopener");
-      };
-  
-      if (isMobile) {
-        if (/WhatsApp/.test(navigator.userAgent)) {
-          openInApp();        
-        } else {
-          openInWeb();
-        }
-      } else {
-        const userChoice = window.confirm("Deseja abrir o WhatsApp para desktop? Clique em OK. WhatsApp Web? Cancelar.");
-        if (userChoice) {
-          openInApp();
-        } else {
-          openInWeb();
-        }
-      }
-    }
-  };
-  
+
   
   return (
     <S.Container id="about">
@@ -102,12 +69,16 @@ const AboutMe = () => {
               <span>Enviar E-mail</span>
             </S.BoxIcon>
           )}
-          <S.BoxIcon>
-            <a onClick={handleOpenWhatsApp} title="Vamos conversar?">
-              <WhatsAppIcon />
-            </a>
-            <span>Fale Comigo</span>
-          </S.BoxIcon>
+            <S.BoxIcon>
+             <a
+                href="https://wa.me/5511950886634"
+                title="Vamos conversar?"
+                target="_blank"
+              >
+                <WhatsAppIcon />
+              </a>
+              <span>Fale Comigo</span>
+            </S.BoxIcon>
 
           <S.Cv>
             <a href={curriculoPath} download title="Baixar Currículo">

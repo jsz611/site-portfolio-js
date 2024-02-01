@@ -107,6 +107,7 @@ export const ContainerIcon = styled.div`
     gap: 10%;
   }
 `;
+
 export const BoxIcon = styled.div`
   display: flex;
   justify-content: center;
@@ -191,6 +192,117 @@ export const BoxIcon = styled.div`
   }
 `;
 
+export const BoxWhatssap = styled.div`
+  display: flex;
+  flex-direction: column; /* Ensure text is always below icon */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+
+  a:hover {
+    background-color: ${(props) => props.theme["gray-100"]};
+    border-radius: 4px;
+  }
+
+  /* Adjust font sizes for different screen sizes as needed */
+  svg {
+    font-size: 28px;
+    color: ${(props) => props.theme["gray-700"]};
+  }
+
+  span {
+    font-size: 8px;
+    font-weight: 600;
+  }
+
+  /* Remove unnecessary media queries related to layout */
+`;
+
+export const BoxWhatssap2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  height: auto;
+  a:hover {
+    background-color: ${(props) => props.theme["gray-100"]};
+    border-radius: 4px;
+  }
+  @media (min-width: 200px) {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    margin: 4px;
+
+    svg {
+      font-size: 28px;
+      color: ${(props) => props.theme["gray-700"]};
+    }
+    span {
+      font-size: 8px;
+      font-weight: 600;
+    }
+  }
+  @media (min-width: 250px) {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    margin: 4px;
+
+    svg {
+      font-size: 28px;
+      color: ${(props) => props.theme["gray-700"]};
+    }
+    span {
+      font-size: 8px;
+      font-weight: 600;
+    }
+  }
+  @media (min-width: 360px) {
+    display: flex;
+    width: 100px;
+
+    svg {
+      font-size: 36px;
+      color: ${(props) => props.theme["gray-700"]};
+    }
+    span {
+      font-size: 11px;
+      font-weight: 600;
+    }
+  }
+  @media (min-width: 740px) {
+    display: flex;
+    width: 110px;
+
+    svg {
+      font-size: 42px;
+      color: ${(props) => props.theme["gray-700"]};
+    }
+    span {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 120px;
+
+    svg {
+      font-size: 46px;
+      color: ${(props) => props.theme["gray-700"]};
+    }
+    span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+`;
 export const Cv = styled.div`
   display: flex;
   justify-content: center;
