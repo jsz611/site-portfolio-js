@@ -101,7 +101,7 @@ const AboutMe = () => {
             <a href="https://faex.edu.br/" target="_blank" title="Faex">
               FAEX
             </a>
-            , concluído em junho de 2020. Hoje estou cursando Gestão da
+            , concluída em junho de 2020. Hoje estou cursando Gestão da
             Tecnologia da Informação pela
             <a href="https://www.uninter.com/" target="_blank" title="Uninter">
               Uninter
@@ -117,12 +117,11 @@ const AboutMe = () => {
               Ds3 Telecom
             </a>
             , fui promovido para o suporte técnico e a partir dali percebi que
-            eu queria trabalhar com programação, então fiz um curso de
-            desenvolvimento fullstack pela
+            queria trabalhar com programação. Então passei pela
             <a href="https://recodepro.org.br/" target="_blank" title=" Recode">
               Recode
             </a>
-            e logo consegui um emprego na
+            e
             <a
               href="https://badico.cloud/"
               target="_blank"
@@ -130,8 +129,8 @@ const AboutMe = () => {
             >
               Badico Cloud Engineering
             </a>
-            como desenvolvedor fullstack. Na Badico Cloud pude trabalhar em
-            equipe utilizando algumas tecnologias como:
+            como desenvolvedor fullstack. Pude trabalhar sozinho e em equipe
+            utilizando algumas tecnologias como:
           </S.BoxText>
           <IconsTecnologies />
         </S.AboutMe>
