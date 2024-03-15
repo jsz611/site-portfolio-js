@@ -107,6 +107,7 @@ export const ContainerIcon = styled.div`
     gap: 10%;
   }
 `;
+
 export const BoxIcon = styled.div`
   display: flex;
   justify-content: center;
@@ -271,7 +272,6 @@ export const Avatar = styled.div`
     width: 210px;
     height: 210px;
   }
-  
 `;
 export const AboutMe = styled.div`
   display: flex;

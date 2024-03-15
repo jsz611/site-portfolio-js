@@ -14,9 +14,32 @@ const AboutMe = () => {
   const curriculoPath = "/assets/images/cv-josiel.pdf";
   const curriculoImgPath = "/assets/images/curriculo.svg";
 
+
   const handleOpenGmail = () => {
     window.location.href = "mailto:souzajosiel611@gmail.com";
   };
+  const handleOpenWhatsApp = () => {
+    const phoneNumber = "5511950886634";
+    const textMessage = "Olá, tudo bem?";
+    const whatsappAppUrl = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(textMessage)}`;
+    const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${textMessage}`;
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = whatsappAppUrl;
+    } else {
+      const userChoice = window.confirm("Deseja abrir o WhatsApp para desktop? Clique em OK. WhatsApp Web? Cancelar.");
+
+      if (userChoice) {
+        window.location.href = whatsappAppUrl;
+      } else {
+        window.open(whatsappWebUrl, "_blank", "noopener,noreferrer");
+      }
+    }
+  };
+
+
   return (
     <S.Container id="about">
       <S.Description>
@@ -68,7 +91,7 @@ const AboutMe = () => {
           )}
           <S.BoxIcon>
             <a
-              href="https://wa.me/5535999288389"
+              onClick={handleOpenWhatsApp}
               title="Vamos conversar?"
               target="_blank"
             >
@@ -76,6 +99,7 @@ const AboutMe = () => {
             </a>
             <span>Fale Comigo</span>
           </S.BoxIcon>
+
           <S.Cv>
             <a href={curriculoPath} download title="Baixar Currículo">
               <img src={curriculoImgPath} alt="Currículo" />
