@@ -22,7 +22,7 @@ export const ContentCard: Array<Icard> = [
     img4: `${path}/imgTours/refresh.png`,
     description:
       "Consumo de API da course.  Utilizei o react vite, fetch para fazer requisições HTTP na API https://course-api.com/, deixando o site responsível para móbile, tablet e desktop e o deploy foi feito na vercel",
-    site: "https://couser-api-consumption.vercel.app/",
+    site: "https://couser-api-consumption-two.vercel.app/",
     codigo: "https://github.com/jsz611/couser-api-consumption",
   },
   {
