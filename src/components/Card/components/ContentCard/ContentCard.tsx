@@ -68,7 +68,7 @@ export const ContentCard: Array<Icard> = [
     img3: `${path}/imgPortfolio/footer.png`,
     img4: `${path}/imgPortfolio/sobre.png`,
     description: `Este site visa unir todos os projetos que eu fizer. Para construção desse site, foi utilizado o vite, typescript, axios para fazer enviar os dados do formulário para uma planilha no Google drive usando um serviço chamado SHEET.BEST, material.ui. E foi feito deploy na netlify`,
-    site: "https://site-portfolio-js.netlify.app/",
+    site: "https://site-portfolio-sdj.netlify.app/",
     codigo: "https://github.com/jsz611/site-portfolio-js",
   },
   {
