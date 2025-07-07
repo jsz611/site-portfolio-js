@@ -25,7 +25,7 @@ export const ContentCard: Array<Icard> = [
     site: "https://couser-api-consumption-two.vercel.app/",
     codigo: "https://github.com/jsz611/couser-api-consumption",
   },
-  {
+ /*  {
     id: "2",
     name: "Site de Vagas de Emprego",
     img1: `${path}/imgSiteVagas/home.png`,
@@ -36,7 +36,7 @@ export const ContentCard: Array<Icard> = [
       "Por ser uma hospedagem grátis é preciso utilizar senhas para acessar este site, usuário: umbler e senha: testehospedagem. Site feito com php e mysql para que pessoas possam conseguir seu emprego",
     site: "http://site-de-vagas-com-br.umbler.net/",
     codigo: "https://github.com/jsz611/projeto-squad-3",
-  },
+  }, */
   {
     id: "3",
     name: "API Anúncio de Carro",
